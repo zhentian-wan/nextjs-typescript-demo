@@ -3,8 +3,7 @@ import { NextApiHandler } from "next";
 const data = [
   { id: 1, name: "Wan" },
   { id: 2, name: "Zhen" },
-  { id: 3, name: "Tian" },
-  { id: 4, name: "Good" }
+  { id: 3, name: "Tian" }
 ];
 
 const user: NextApiHandler = (req, res) => {
