@@ -1,11 +1,16 @@
-import Link from "next/link";
+import NextLink from "next/link";
+import { Heading, Link, Flex } from "@chakra-ui/core";
 
 const AboutPage = () => {
   return (
-    <div>
-      <h1>About page</h1>
-      <Link href="/">Home Page</Link>
-    </div>
+    <Flex flexDirection="column" alignItems="center">
+      <Heading as="h1" size="2xl">
+        About page 2
+      </Heading>
+      <NextLink href="/" passHref>
+        <Link>Home Page</Link>
+      </NextLink>
+    </Flex>
   );
 };
 

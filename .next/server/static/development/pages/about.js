@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2024,10 +2024,10 @@ if (false) {} else {
 
 /***/ }),
 
-/***/ "./pages/index.tsx":
-/*!*************************!*\
-  !*** ./pages/index.tsx ***!
-  \*************************/
+/***/ "./pages/about/index.tsx":
+/*!*******************************!*\
+  !*** ./pages/about/index.tsx ***!
+  \*******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2037,120 +2037,76 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "next/head");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/zhentianwan/Documents/programming/next.js/my-app/pages/index.tsx";
+/* harmony import */ var _chakra_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @chakra-ui/core */ "@chakra-ui/core");
+/* harmony import */ var _chakra_ui_core__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "/Users/zhentianwan/Documents/programming/next.js/my-app/pages/about/index.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-
-const useMarquee = () => {
-  const DISPLAY_TEXT = "wow   such next.js   very react   much title   so marquee   ";
-  const {
-    0: text,
-    1: setText
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(DISPLAY_TEXT);
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
-    let i = 0;
-    const timer = setInterval(() => {
-      setText(DISPLAY_TEXT.substring(i) + DISPLAY_TEXT.substring(0, i));
-      i = (i + 1) % DISPLAY_TEXT.length;
-    }, 300);
-    return () => clearInterval(timer);
-  }, []);
-  return text;
+const AboutPage = () => {
+  return __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_2__["Flex"], {
+    flexDirection: "column",
+    alignItems: "center",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6,
+      columnNumber: 5
+    }
+  }, __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_2__["Heading"], {
+    as: "h1",
+    size: "2xl",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7,
+      columnNumber: 7
+    }
+  }, "About page 2"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/",
+    passHref: true,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 7
+    }
+  }, __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 9
+    }
+  }, "Home Page")));
 };
 
-const IndexPage = () => {
-  const text = useMarquee();
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28,
-      columnNumber: 7
-    }
-  }, __jsx("title", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29,
-      columnNumber: 9
-    }
-  }, text)), __jsx("div", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31,
-      columnNumber: 7
-    }
-  }, __jsx("h1", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32,
-      columnNumber: 9
-    }
-  }, "Hello World"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/about",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33,
-      columnNumber: 9
-    }
-  }, "About page"), __jsx("h2", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34,
-      columnNumber: 9
-    }
-  }, text)), __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36,
-      columnNumber: 7
-    }
-  }, __jsx("meta", {
-    name: "description",
-    content: "Nice page",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37,
-      columnNumber: 9
-    }
-  })));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (IndexPage);
+/* harmony default export */ __webpack_exports__["default"] = (AboutPage);
 
 /***/ }),
 
-/***/ 5:
-/*!*******************************!*\
-  !*** multi ./pages/index.tsx ***!
-  \*******************************/
+/***/ 4:
+/*!*************************************!*\
+  !*** multi ./pages/about/index.tsx ***!
+  \*************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/zhentianwan/Documents/programming/next.js/my-app/pages/index.tsx */"./pages/index.tsx");
+module.exports = __webpack_require__(/*! /Users/zhentianwan/Documents/programming/next.js/my-app/pages/about/index.tsx */"./pages/about/index.tsx");
 
 
 /***/ }),
 
-/***/ "next/head":
-/*!****************************!*\
-  !*** external "next/head" ***!
-  \****************************/
+/***/ "@chakra-ui/core":
+/*!**********************************!*\
+  !*** external "@chakra-ui/core" ***!
+  \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("next/head");
+module.exports = require("@chakra-ui/core");
 
 /***/ }),
 
@@ -2199,4 +2155,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=about.js.map
